@@ -122,7 +122,8 @@ do
 done
 
 if test x"$DELETE" = x"1"; then
-    echo "starts removing all instances"
+    echo "delete temp files"
+    rm scripts.tgz
     rm benchmark.conf
     echo "Delete data nodes"
     gcutil deleteinstance --zone=us-central1-b `for ((i=1; i<=$CAS_NUM; i++)); do echo -n cas-$i " "; done` --force --delete_boot_pd
