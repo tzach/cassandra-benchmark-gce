@@ -5,16 +5,16 @@
 ## to use:
 ## 1  ./setup_cassandra --setup // will create all relevant server,
 ## install them and run the cassandra cluster
-## 2 ./setup_cassandra --run // will run the benchark
+## 2 ./setup_cassandra --run // will run the benchmark
 ## 3 ./setup_cassandra --delete // will delete all instances and disk
 ##
-## Base on implemntation of Google Cassandra 1M test
+## Base on implementation of Google Cassandra 1M test
 ## http://googlecloudplatform.blogspot.co.il/2014/03/cassandra-hits-one-million-writes-per-second-on-google-compute-engine.html
 ## 
-## The script set up Cassndra cluster and loaders
-## All Cassndra servers are named cas-x (x is a number)
+## The script set up Cassandra cluster and loaders
+## All Cassandra servers are named cas-x (x is a number)
 ## Loaders are l-x
-## l-1 server is the anchor: scriptas are upload to it, and the
+## l-1 server is the anchor: scripts are upload to it, and the
 ## setup_cluster script is called from it.
 ##
 ## WARNING: the scripts assume these names, and assume all instances
@@ -24,7 +24,7 @@
 ## - OpenJDK is used (not Oracle), and install at the guest (not
 ## download to host first)
 ## - Cassandra is download at the guest (not download to host first)
-## - defualt server is n1-standard-16
+## - default server is n1-standard-16
 ## - Cassandra version used is 2.0.8 (TODO: this should be a parameter)
 ##
 #######################################################
